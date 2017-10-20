@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="autolayout_align" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="pqK-1d-iGS">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="252" verticalHuggingPriority="251" image="dream" translatesAutoresizingMaskIntoConstraints="NO" id="gLk-wf-2nz">
+                                <rect key="frame" x="57" y="418" width="40" height="40"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="252" verticalHuggingPriority="251" image="moon-phase-outline" translatesAutoresizingMaskIntoConstraints="NO" id="Mva-Ok-fKw">
+                                <rect key="frame" x="167.5" y="418" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="7vq-gj-opL"/>
+                                    <constraint firstAttribute="height" constant="40" id="kXu-ga-aNt"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="252" verticalHuggingPriority="251" image="alarm" translatesAutoresizingMaskIntoConstraints="NO" id="GOv-lL-GEX">
+                                <rect key="frame" x="289" y="418" width="40" height="40"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12:48" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RD1-q2-AZU">
+                                <rect key="frame" x="137" y="124" width="101" height="48"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Galaxy" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ybo-Hg-Ey5">
+                                <rect key="frame" x="157" y="20" width="60" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HHf-t8-PMT" customClass="RoundedButton" customModule="autolayout_align" customModuleProvider="target">
+                                <rect key="frame" x="49" y="571" width="56" height="33"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <size key="titleShadowOffset" width="5" height="5"/>
+                                <state key="normal" title="Normal">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="topPadding">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gTS-VT-BuV" customClass="RoundedButton" customModule="autolayout_align" customModuleProvider="target">
+                                <rect key="frame" x="151.5" y="571" width="72" height="33"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="Romantic">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P6E-Zo-peB" customClass="RoundedButton" customModule="autolayout_align" customModuleProvider="target">
+                                <rect key="frame" x="286" y="571" width="46" height="33"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="Movie">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Relax" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gIE-gb-LM3">
+                                <rect key="frame" x="54.5" y="471" width="45" height="26"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sleep" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eIY-PR-xnk">
+                                <rect key="frame" x="164" y="472" width="47" height="24"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Alarm" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RYX-R9-MkM">
+                                <rect key="frame" x="284.5" y="473" width="49" height="22"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="eIY-PR-xnk" firstAttribute="centerY" secondItem="gIE-gb-LM3" secondAttribute="centerY" id="7Xn-s7-s9w"/>
+                            <constraint firstItem="gTS-VT-BuV" firstAttribute="top" secondItem="eIY-PR-xnk" secondAttribute="bottom" constant="75" id="8Qm-2S-W2k"/>
+                            <constraint firstItem="HHf-t8-PMT" firstAttribute="centerX" secondItem="gLk-wf-2nz" secondAttribute="centerX" id="91j-oz-Axf"/>
+                            <constraint firstItem="P6E-Zo-peB" firstAttribute="centerY" secondItem="HHf-t8-PMT" secondAttribute="centerY" id="C1k-ef-9jM"/>
+                            <constraint firstItem="pqK-1d-iGS" firstAttribute="leading" secondItem="gLk-wf-2nz" secondAttribute="trailing" constant="-97" id="Dj8-eu-XjE"/>
+                            <constraint firstItem="Mva-Ok-fKw" firstAttribute="leading" secondItem="gLk-wf-2nz" secondAttribute="trailing" priority="900" constant="80" id="H0w-FZ-Ubs"/>
+                            <constraint firstItem="GOv-lL-GEX" firstAttribute="height" secondItem="Mva-Ok-fKw" secondAttribute="height" id="HFx-HD-w9R"/>
+                            <constraint firstItem="gLk-wf-2nz" firstAttribute="height" secondItem="Mva-Ok-fKw" secondAttribute="height" id="IBS-Zu-HsF"/>
+                            <constraint firstItem="Mva-Ok-fKw" firstAttribute="top" secondItem="gLk-wf-2nz" secondAttribute="top" id="LIC-gG-NPF"/>
+                            <constraint firstItem="GOv-lL-GEX" firstAttribute="leading" secondItem="Mva-Ok-fKw" secondAttribute="trailing" priority="901" constant="72" id="Miz-jx-Roh"/>
+                            <constraint firstItem="HHf-t8-PMT" firstAttribute="top" secondItem="pqK-1d-iGS" secondAttribute="bottom" constant="-96" id="OkN-la-s3V"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="pqK-1d-iGS" secondAttribute="trailing" id="Rea-ON-cgo"/>
+                            <constraint firstItem="ybo-Hg-Ey5" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="S4Y-do-xtv"/>
+                            <constraint firstItem="pqK-1d-iGS" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="TUh-aa-XvX"/>
+                            <constraint firstItem="GOv-lL-GEX" firstAttribute="centerY" secondItem="gLk-wf-2nz" secondAttribute="centerY" id="Usm-XI-7JF"/>
+                            <constraint firstItem="RYX-R9-MkM" firstAttribute="centerX" secondItem="GOv-lL-GEX" secondAttribute="centerX" id="V7n-Jm-s0Z"/>
+                            <constraint firstItem="GOv-lL-GEX" firstAttribute="top" secondItem="pqK-1d-iGS" secondAttribute="bottom" constant="-249" id="VsI-fn-g9P"/>
+                            <constraint firstItem="ybo-Hg-Ey5" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="YMs-Gj-sKA"/>
+                            <constraint firstItem="gTS-VT-BuV" firstAttribute="top" secondItem="pqK-1d-iGS" secondAttribute="bottom" constant="-96" id="YUf-wR-W5v"/>
+                            <constraint firstItem="HHf-t8-PMT" firstAttribute="top" secondItem="gIE-gb-LM3" secondAttribute="bottom" constant="74" id="Zm1-VR-Wc4"/>
+                            <constraint firstItem="gIE-gb-LM3" firstAttribute="centerX" secondItem="gLk-wf-2nz" secondAttribute="centerX" id="b61-v4-SqK"/>
+                            <constraint firstItem="GOv-lL-GEX" firstAttribute="width" secondItem="Mva-Ok-fKw" secondAttribute="width" id="b6N-c1-stS"/>
+                            <constraint firstItem="GOv-lL-GEX" firstAttribute="bottom" secondItem="gLk-wf-2nz" secondAttribute="bottom" id="cBC-fc-gfR"/>
+                            <constraint firstItem="gTS-VT-BuV" firstAttribute="centerX" secondItem="Mva-Ok-fKw" secondAttribute="centerX" id="cVj-cw-UD6"/>
+                            <constraint firstItem="GOv-lL-GEX" firstAttribute="leading" secondItem="pqK-1d-iGS" secondAttribute="trailing" constant="-86" id="cz5-Fa-Yey"/>
+                            <constraint firstItem="eIY-PR-xnk" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dHA-Ge-Php"/>
+                            <constraint firstItem="P6E-Zo-peB" firstAttribute="top" secondItem="RYX-R9-MkM" secondAttribute="bottom" constant="76" id="dKv-3J-Wzr"/>
+                            <constraint firstItem="Mva-Ok-fKw" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="eJy-R4-Mom"/>
+                            <constraint firstItem="gLk-wf-2nz" firstAttribute="width" secondItem="Mva-Ok-fKw" secondAttribute="width" id="hcS-yW-bLf"/>
+                            <constraint firstItem="RD1-q2-AZU" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="104" id="j66-7E-TtT"/>
+                            <constraint firstItem="RYX-R9-MkM" firstAttribute="centerY" secondItem="gIE-gb-LM3" secondAttribute="centerY" id="kgk-3m-sUE"/>
+                            <constraint firstItem="Mva-Ok-fKw" firstAttribute="centerY" secondItem="gLk-wf-2nz" secondAttribute="centerY" id="kv4-1l-e22"/>
+                            <constraint firstItem="GOv-lL-GEX" firstAttribute="top" secondItem="gLk-wf-2nz" secondAttribute="top" id="mw7-Wd-0nQ"/>
+                            <constraint firstItem="P6E-Zo-peB" firstAttribute="top" secondItem="pqK-1d-iGS" secondAttribute="bottom" constant="-96" id="o8I-I3-cQC"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="pqK-1d-iGS" secondAttribute="bottom" id="py5-yx-AHn"/>
+                            <constraint firstItem="gTS-VT-BuV" firstAttribute="centerY" secondItem="HHf-t8-PMT" secondAttribute="centerY" id="qSh-1g-A1i"/>
+                            <constraint firstItem="pqK-1d-iGS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="qbE-rU-azj"/>
+                            <constraint firstItem="RD1-q2-AZU" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="tcs-3r-KNA"/>
+                            <constraint firstItem="P6E-Zo-peB" firstAttribute="centerX" secondItem="GOv-lL-GEX" secondAttribute="centerX" id="uI9-IQ-qv5"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="alarm" width="128" height="128"/>
+        <image name="background" width="684" height="1228"/>
+        <image name="dream" width="128" height="128"/>
+        <image name="moon-phase-outline" width="128" height="128"/>
+    </resources>
+</document>
